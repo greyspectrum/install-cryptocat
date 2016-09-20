@@ -127,7 +127,7 @@ curl -O https://download.crypto.cat/client/Cryptocat-linux-x64.zip
 
 unzip Cryptocat-linux-x64.zip
 
-gpg --verify Cryptocat.zip.sig Cryptocat.zip
+gpg --verify Cryptocat.zip.asc Cryptocat.zip
 
 unzip Cryptocat.zip
 
