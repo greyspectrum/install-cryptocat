@@ -37,6 +37,9 @@ cd npth-1.2
 make
 sudo make install
 
+cd
+cd Downloads
+
 curl -O ftp://ftp.gnupg.org/gcrypt/libgpg-error/libgpg-error-1.9.tar.gz
 
 curl -O ftp://ftp.gnupg.org/gcrypt/libgpg-error/libgpg-error-1.9.tar.gz.sig
@@ -50,6 +53,9 @@ cd libgpg-error-1.9
 ./configure
 make
 sudo make install
+
+cd
+cd Downloads
 
 curl -O ftp://ftp.gnupg.org/gcrypt/libgcrypt/libgcrypt-1.7.3.tar.gz
 
@@ -65,6 +71,9 @@ cd libgcrypt-1.7.3
 make
 sudo make install
 
+cd
+cd Downloads
+
 curl -O ftp://ftp.gnupg.org/gcrypt/libksba/libksba-1.3.5.tar.bz2
 
 curl -O ftp://ftp.gnupg.org/gcrypt/libksba/libksba-1.3.5.tar.bz2.sig
@@ -79,6 +88,9 @@ cd libksba-1.3.5
 make
 sudo make install
 
+cd
+cd Downloads
+
 curl -O ftp://ftp.gnupg.org/gcrypt/libassuan/libassuan-2.4.3.tar.bz2
 
 curl -O ftp://ftp.gnupg.org/gcrypt/libassuan/libassuan-2.4.3.tar.bz2.sig
@@ -92,6 +104,9 @@ cd libassuan-2.4.3
 ./configure
 make
 sudo make install
+
+cd
+cd Downloads
 
 # Fetch the source files for GPG 2.1.15
 
