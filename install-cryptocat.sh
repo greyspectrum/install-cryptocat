@@ -136,6 +136,8 @@ rm npth-1.2.tar.bz2 npth-1.2.tar.bz2.sig libgpg-error-1.9.tar.gz libgpg-error-1.
 
 rm -rf npth-1.2 libgpg-error-1.9 libgcrypt-1.7.3 libksba-1.3.5 libassuan-2.4.3 gnupg-2.1.15
 
+cd
+
 # Fetch Cryptocat signing keys
 
 gpg --recv-keys 0xab266cb76091b1f8
