@@ -128,6 +128,14 @@ sudo make install
 
 cd
 
+# Clean things up
+
+cd Downloads
+
+rm npth-1.2.tar.bz2 npth-1.2.tar.bz2.sig libgpg-error-1.9.tar.gz libgpg-error-1.9.tar.gz.sig libgcrypt-1.7.3.tar.gz libgcrypt-1.7.3.tar.gz.sig libksba-1.3.5.tar.bz2 libksba-1.3.5.tar.bz2.sig libassuan-2.4.3.tar.bz2 libassuan-2.4.3.tar.bz2.sig gnupg-2.1.15.tar.bz2 gnupg-2.1.15.tar.bz2.sig
+
+rm -rf npth-1.2 libgpg-error-1.9 libgcrypt-1.7.3 libksba-1.3.5 libassuan-2.4.3 gnupg-2.1.15
+
 # Fetch Cryptocat signing keys
 
 gpg --recv-keys 0xab266cb76091b1f8
