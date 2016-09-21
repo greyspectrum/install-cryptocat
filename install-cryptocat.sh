@@ -37,19 +37,12 @@ rm Cryptocat-linux-x64.zip Cryptocat.zip.asc Cryptocat.zip
 
 cd
 
-if test -e ~/bin ; then
-	echo -e '#!/usr/bin/env bash \n\n# Start up Cryptocat\n\ncd\n\ncd .cryptocat/Cryptocat-linux-x64\n\n./Cryptocat' > ~/bin/cryptocat
-else
-	mkdir bin
-	echo -e '#!/usr/bin/env bash \n\n# Start up Cryptocat\n\ncd\n\ncd .cryptocat/Cryptocat-linux-x64\n\n./Cryptocat' > ~/bin/cryptocat
-fi
+echo -e '#!/usr/bin/env bash \n\n# Start up Cryptocat\n\ncd\n\ncd .cryptocat/Cryptocat-linux-x64\n\n./Cryptocat' > /usr/local/bin/cryptocat
 
-chmod +x ~/bin/cryptocat
-
-export PATH="$PATH:~/bin" 
+chmod +x /usr/local/bin/cryptocat
 
 # Start Cryptocat
 
 cd .cryptocat/Cryptocat-linux-x64
 
-./Cryptocat
+./Cryptocat 
