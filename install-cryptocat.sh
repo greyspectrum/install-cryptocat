@@ -46,7 +46,7 @@ fi
 
 chmod +x ~/bin/cryptocat
 
-export PATH=$PATH:~/bin 
+export PATH="$PATH:~/bin" 
 
 # Start Cryptocat
 
