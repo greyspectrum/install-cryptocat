@@ -47,4 +47,4 @@ cd .cryptocat/Cryptocat-linux-x64
 
 ./Cryptocat &
 
-echo "Installation complete."
+echo -e '\nCRYPTOCAT INSTALLATION COMPLETE.'
