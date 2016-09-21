@@ -45,4 +45,6 @@ chmod +x /usr/local/bin/cryptocat
 
 cd .cryptocat/Cryptocat-linux-x64
 
-./Cryptocat 
+./Cryptocat &
+
+echo "Installation complete."
