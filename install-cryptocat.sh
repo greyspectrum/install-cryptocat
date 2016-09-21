@@ -13,7 +13,7 @@ cd
 
 # Fetch Cryptocat signing keys
 
-gpg --recv-keys 0xab266cb76091b1f8
+gpg --recv-keys --keyserver keys.gnupg.net 0xab266cb76091b1f8
 
 # Install Cryptocat
 
@@ -45,6 +45,8 @@ else
 fi
 
 chmod +x ~/bin/cryptocat
+
+export PATH=$PATH:~/bin 
 
 # Start Cryptocat
 
