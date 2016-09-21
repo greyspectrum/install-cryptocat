@@ -20,4 +20,4 @@ Then, run it:
 
 ## Disclaimer
 
-***I am not associated with the Cryptocat project. This is just a script I wrote to make the installation less painful.***
+**I am not associated with the Cryptocat project. This is just a script I wrote to make the installation less painful.**
