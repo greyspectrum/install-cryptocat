@@ -33,7 +33,7 @@ unzip Cryptocat.zip
 
 rm Cryptocat-linux-x64.zip Cryptocat.zip.asc Cryptocat.zip
 
-# Creat startup script
+# Create startup script
 
 cd
 
