@@ -17,3 +17,7 @@ First, make this script executable:
 Then, run it:
 
 `$ ./install-cryptocat.sh`
+
+## Disclaimer
+
+***I am not associated with the Cryptocat project. This is just a script I wrote to make the installation less painful.***
