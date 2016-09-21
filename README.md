@@ -6,6 +6,8 @@ This script automatically fetches the Cryptocat signing keys and verifies the si
 
 This script also creates an additional shell script for launching Cryptocat in /usr/local/bin, so after this installation script runs, you can run Cryptocat at any time by typing `cryptocat` in the terminal, just like any other program. You can also launch Cryptocat from the GUI or save it to your dock/launcher, if you prefer.
 
+IMPORTANT: I'm still debugging one small issue with this script, so please don't try to use it, yet.
+
 ## Installation
 
 First, make this script executable:
