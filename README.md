@@ -8,7 +8,7 @@ This script also creates an additional shell script for launching Cryptocat in ~
 
 ## Installation
 
-First, clone this repository. Then, cd into `install-cryptocat` and make this script executable:
+First, clone this repository. Then, `cd` into `install-cryptocat` and make this script executable:
 
 `$ chmod +x install-cryptocat.sh`
 
