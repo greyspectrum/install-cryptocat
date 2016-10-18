@@ -1,6 +1,6 @@
 # install-cryptocat
 
-Automates the process of fetching, verifying, and installing Cryptocat.
+Automates the process of fetching, verifying, and installing Cryptocat on Linux.
 
 This script automatically fetches the Cryptocat signing keys and verifies the signature on the copy of Cryptocat it downloads from the Cryptocat project website. The results of this GPG signature verification are printed to the terminal.
 
