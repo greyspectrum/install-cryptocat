@@ -25,7 +25,14 @@ curl -O https://download.crypto.cat/client/Cryptocat-linux-x64.zip
 
 unzip Cryptocat-linux-x64.zip
 
-gpg --verify Cryptocat.zip.asc Cryptocat.zip
+if gpg --verify Cryptocat.zip.asc Cryptocat.zip; then
+    echo "This download has been verified. GPG signature check successful."
+else
+    echo "ERROR: BAD GPG SIGNATURE. ABORTING..."
+    cd
+    rm -rf .cryptocat
+    exit 1
+fi
 
 unzip Cryptocat.zip
 
@@ -37,9 +44,14 @@ rm Cryptocat-linux-x64.zip Cryptocat.zip.asc Cryptocat.zip
 
 cd
 
-echo -e '#!/usr/bin/env bash \n\n# Start up Cryptocat\n\ncd\n\ncd .cryptocat/Cryptocat-linux-x64\n\n./Cryptocat' > /usr/local/bin/cryptocat
+if test -e ~/bin; then
+    echo -e '#!/usr/bin/env bash \n\n# Start up Cryptocat\n\ncd\n\ncd .cryptocat/Cryptocat-linux-x64\n\n./Cryptocat' > ~/bin/cryptocat
+else
+    mkdir bin
+    echo -e '#!/usr/bin/env bash \n\n# Start up Cryptocat\n\ncd\n\ncd .cryptocat/Cryptocat-linux-x64\n\n./Cryptocat' > ~/bin/cryptocat
+fi
 
-chmod +x /usr/local/bin/cryptocat
+chmod +x ~/bin/cryptocat
 
 # Start Cryptocat
 
@@ -47,4 +59,4 @@ cd .cryptocat/Cryptocat-linux-x64
 
 ./Cryptocat &
 
-echo -e '\nCRYPTOCAT INSTALLATION COMPLETE.'
+echo -e '\nDOWNLOAD SUCCESSFULLY VERIFIED: GOOD GPG SIGNATURE. CRYPTOCAT INSTALLATION COMPLETE.'
