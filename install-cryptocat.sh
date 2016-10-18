@@ -72,6 +72,7 @@ fi
 chmod +x ~/bin/cryptocat
 
 # Start Cryptocat
+echo "==Starting Cryptocat..."
 
 cd .cryptocat/Cryptocat-linux-x64
 
