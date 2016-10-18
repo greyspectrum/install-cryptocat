@@ -21,7 +21,7 @@ echo "==Verifying Cryptocat signing key fingerprint..."
 
 echo -e 'pub   3072R/6091B1F8 2016-08-09\n      Key fingerprint = FA21 CD53 6312 FADF 9B5D  D804 AB26 6CB7 6091 B1F8\nuid                  Nadim Kobeissi <nadim@nadim.computer>\nsub   3072R/A4D437B0 2016-08-09' > fingerprint
 
-if gpg --fingerprint 0xab266cb76091b1f8 | diff -q fingerprint
+if gpg --fingerprint 0xab266cb76091b1f8 | diff -q fingerprint; then
     echo "==The Cryptocat signing key provided by the keyserver, 0x6091B1F8, has the expected fingerprint. Key Fingerprint: FA21 CD53 6312 FADF 9B5D  D804 AB26 6CB7 6091 B1F8"
 else
     echo "==ERROR: THE KEY PROVIDED BY THE KEYSERVER HAS RETURNED AN UNEXPECTED FINGERPRINT. ABORTING..."
